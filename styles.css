@@ -9,6 +9,15 @@ body{
     height: 60px;
     box-shadow: 0 2px 2px 2px #181818;
 }
+.nav-bar p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0px 16px 20px;
+    float: left;
+    background: -webkit-linear-gradient(#eee, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .nav-bar ul{
     list-style-type: none;
     float:right;
@@ -23,7 +32,7 @@ body{
     color: white;
     padding:18px 7px 18px 7px;
 }
-.nav-bar a:hover:not(.active){
+.nav-bar a:hover:not(.active,.icon){
     color:#FFA500;
     border-bottom: 2px solid #FFA500;
     font-weight:500;
@@ -42,13 +51,58 @@ body{
     color: white;
     font-weight: 500;
 }
-.nav-bar .icon {
+.icon{
     display: none;
-    margin-bottom: none;
 }
- @media screen and (max-width: 600px) {
+@media screen and (max-width:600px){
+    #home{
+        height: 75vh !important;
+    }
+    .nav-bar li{
+        display: none;
+    }
+    .nav-bar .icon{
+        display: block;
+        float: right;
+        right: 0px !important;
+        font-size: 24px;
+        padding-top: 15px;
+        transform: translate(30px,0px);
+        background: -webkit-linear-gradient(#eee, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
 }
- @media screen and (max-width: 600px) {
+@media screen and (max-width:600px){
+    .nav-bar.responsive{
+        position: relative !important;
+    }
+    .nav-bar.responsive .icon{
+        position: absolute;
+        transform: translate(-30px,0px);
+        top: 0;
+        right: 0;
+    }
+    .nav-bar.responsive li{
+        float: none !important;
+        display: block !important;
+        text-align: center !important;
+    }
+    .nav-bar.responsive{
+        height: 100vh;
+    }
+    .nav-bar.responsive ul{
+        display: block;
+        margin-top: 100px;
+        list-style-type: none;
+        width: 100%;
+    }
+    .nav-bar.responsive .nav-items{
+        display: block;
+        text-align: center !important;
+    }
+    
 }
 .about-img{
     width: 110px;
@@ -114,12 +168,20 @@ body{
         height:100vh;
     }
 }
+/*------------------------------------------------------*/
+/*-----------------------------------------------------*/
 @media (max-width:700px){
     .row{
         display: block !important;
     }
     #resume{
         height: 1200px !important;
+    }
+    .card{
+        height: auto !important;
+        width:auto !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
 }
 .about-img2{
