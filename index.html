@@ -12,7 +12,7 @@
         <script src="./typed.js-master/lib/typed.min.js"></script>
         <!-- Add jquery cdn -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="C:/Users/pavan/Desktop/My_Portfolio/script.js"></script>
+    
     </head>
     <body>
         <div class="nav-bar" id="myTopnav">
@@ -30,19 +30,19 @@
             </div>
             <h3 class="my-intro" style="margin-top:20px;">Hi👋 There!!!</h3>
             <div class="auto-type">
-                <h2 class="my-intro">I'm <span class="animate" style="color: #FFA500;"></span></h2>
+                <h2 class="my-intro">I'm <span id="animate" class="animate" style="color: #FFA500;"></span></h2>
             </div><br>
             <div class="text-center">
             <a href="https://drive.google.com/file/d/155ufi7TbgW1-IfEZ8z88_V0_GR0uT0Xn/view?usp=sharing"><button type="button" class="btn btn-outline-primary">Hire Me!!</button></a>
             </div>
         </section> 
         <!--About section-->
-        <section id="about">
+        <section id="about" style="max-height: 750px;">
             <h1 class="heading1">About</h1>
             <div class="flex-container">
                 <img src="Y_P.jpg" class="about-img2">
-                <p class="about-para"><span style="color: dodgerblue; font-size: 24px;">Hello !!!</span><br>My name is Pavani Yarlagadda,pursuing B-tech 3rd year CSE in RGUKT nuzvid.
-                    I'm very much interested in Web Development and having a skills of HTML5,CSS3,Javascript,Mysql,C,Python,Datastructures and Algorithms.
+                <p class="about-para"><span style="color: dodgerblue; font-size: 24px;text-align: right;">Hello !!!</span><br>My name is Pavani Yarlagadda,pursuing B-tech 3rd year CSE in RGUKT nuzvid.
+                    I'm very much interested in Web Development and having a skills of HTML5, CSS3, Javascript, Mysql, C, Python, Datastructures and Algorithms.
                     Being a enthusiastic learner always ready to bring my skills to working company.
                 </p>
             </div>
@@ -52,7 +52,7 @@
             <h1 class="heading1">Skills</h1>
             <h4><span style="color: #FFA500;">--</span>My Techstack<span style="color: #FFA500;">--</span></h4>
             <!-------------------------------------------------------------------------------->
-            
+            <div>
             <p class="skill-name">HTML</p>
             <div class="container">
                 <div class="skill html">95%</div>
@@ -82,13 +82,14 @@
             <div class="container">
                 <div class="skill dsa">70%</div>
             </div>
+            </div>
             <!-------------------------------------------------------------------------------->
         </section>
         <!--Resume-->
         <section id="resume">
-            <h1 class="heading1">Resume</h1>
+            <h1 class="heading1" style="margin-bottom:14px">Resume</h1>
             <div class="row" style="margin-right: 15px; margin-left: 15px;">
-                <div class="col-6">
+                <div class="col">
                     <h3 class="heading2">Objective</h3>
                     <div class="timeline-heading">
                         <div>
@@ -119,12 +120,12 @@
                     </div>
                 </div>
                 <!----Another column-->
-                <div class="col-6">
+                <div class="col">
                     <!--experience-->
                     <h3 class="heading2">Experience</h3>
                     <div class="timeline-heading2">
                                 <div class="work-info">
-                                    <h3>Frontend Webdeveloper Intern</h3>
+                                    <h3 style="overflow: visible;">Frontend Webdeveloper Intern</h3>
                                     <button type="button" class="btn btn-outline-secondary btn-sm">Dec 2020 - May 2021</button>
                                     <br><i style="color: aliceblue;">Meebuddy</i>
                                     <h5 style="color: aliceblue;">Description:</h5>
@@ -155,20 +156,6 @@
             <p style="color: white;text-align: center;">Made with ❤️</p>
             <h4 style="text-align: center;color: aliceblue;">By <span style="color: #FFA500;">P</span>avani <span style="color: #FFA500;">Y</span>arlagadda</h4>
         </div>
-        <script>
-        if ($('.animate').length == 1) {
-            var typed = new Typed('.animate', {
-            strings: [
-                "Pavani Yarlagadda",
-                "a Student",
-                "a Frontend developer",
-                ],
-                typeSpeed:50,
-                backDelay: 900,
-                backSpeed:50,
-                loop:true
-            });
-        }
-        </script>
+        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
