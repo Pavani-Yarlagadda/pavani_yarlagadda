@@ -27,6 +27,7 @@ body{
   .loader-inner {
     /* vertical-align: top; */
     text-align: center;
+    margin-top:5px !important;
     display: block;
     width: 100%;
     background: -webkit-linear-gradient(#eee, #FFA500);
